@@ -24,7 +24,7 @@ const criaMateria = (nome) => {
 const exibeAluno = (aluno) => {
     console.log('')
     console.log(`Nome: ${aluno.nome}`)
-    console.log(`Média total: ${aluno.materias.reduce((acc, materias) => acc + materias.media, 0) / aluno.materias.length}`)
+    console.log(`Média total: ${(aluno.materias.reduce((acc, materias) => acc + materias.media, 0) / aluno.materias.length).toFixed(2)}`)
     console.log('')
     console.log('')
     console.log('Matérias:')
